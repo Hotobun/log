@@ -30,7 +30,8 @@ git commit -m "xxx"	# commit将暂存区的内容写进版本库
 	# 首先要找到想要回退的版本id或者前第几个版本
 	$ git reset id 	# 将暂存区内容和该版本已提交内容恢复到未缓存状态 
 			# 不影响工作区
-	$ git reset --soft id # 将该版本的已提交内容回滚到暂存区 不影响本地		$ git reset --hard id # 将该版本的已提交内容回滚到本地 不可恢复
+	$ git reset --soft id # 将该版本的已提交内容回滚到暂存区 不影响本地
+	$ git reset --hard id # 将该版本的已提交内容回滚到本地 不可恢复
 	 # 可选id或者HEAD~i	i为数字 意为前第几个版本
 	 
       2.revert方法：在时间轴最后加一个版本 不丢失更改 向前进
