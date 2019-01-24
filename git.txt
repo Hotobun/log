@@ -44,7 +44,13 @@ git commit -m "xxx"	# commit将暂存区的内容写进版本库
 	$ git reflog 
 	# 显示你每一次命令 找到版本号 再回多次
 
-
+丢弃工作区的修改：
+	$ git checkout -- filename  
+	# 丢弃工作区修改 
+	# 恢复这个文件到最近一次commit 或者 add时的状态
+	
+	$ git reset HEAD filename 
+	# 把HEAD指向版本的文件 放到工作区 HEAD默认指向最新版
 
 
 
