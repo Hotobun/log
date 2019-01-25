@@ -1,0 +1,14 @@
+装饰器：
+
+from functools import wraps   #########
+def wrapper(func):
+    @wraps(func)     ##############   看这两行！
+    def inner(*args, **kwargs):
+        print("正在使用装饰器")
+        result = func(*args, **kwargs)
+        return result
+    return inner
+
+______________________________________________
+
+
